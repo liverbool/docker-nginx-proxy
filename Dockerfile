@@ -1,7 +1,7 @@
 FROM jwilder/nginx-proxy
 MAINTAINER Liverbool nukboon@gmail.com
 
-RUN echo 'Asia/Bangkok' | sudo tee /etc/timezone
+RUN echo 'Asia/Bangkok' | tee /etc/timezone
 
 RUN { \
       echo 'server_tokens off;'; \
