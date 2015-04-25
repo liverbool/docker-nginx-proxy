@@ -1,10 +1,6 @@
 FROM jwilder/nginx-proxy
 MAINTAINER Liverbool nukboon@gmail.com
 
-RUN locale-gen en_US.UTF-8
-RUN export LANG=en_US.UTF-8
-RUN export LC_ALL=en_US.UTF-8
-
 RUN echo 'Asia/Bangkok' | sudo tee /etc/timezone
 
 RUN { \
