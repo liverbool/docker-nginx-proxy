@@ -5,7 +5,7 @@ RUN locale-gen en_US.UTF-8
 RUN export LANG=en_US.UTF-8
 RUN export LC_ALL=en_US.UTF-8
 
-RUN timedatectl set-timezone Asia/Bangkok
+RUN echo 'Asia/Bangkok' | sudo tee /etc/timezone
 
 RUN { \
       echo 'server_tokens off;'; \
